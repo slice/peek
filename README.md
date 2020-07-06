@@ -14,10 +14,11 @@ window.DYNAMIC = true;
 window.DYNAMIC_JSON_ENDPOINT = "//dynamic.example.json";
 ```
 
-`DYNAMIC_JSON_ENDPOINT` dictates the URL the website will `fetch`. Make sure
-that you have [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-configured correctly if you'll have the website request something that isn't on
-the same origin (i.e. domain).
+`DYNAMIC_JSON_ENDPOINT` dictates the URL the website will fetch on load. Make
+sure that you have
+[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) configured
+correctly if you want to have the website request something that isn't on the
+same origin.
 
 If the endpoint starts with `//`, then the `//` will be replaced with the domain
 that the page is loaded at, even matching the protocol.
