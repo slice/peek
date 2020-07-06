@@ -2,12 +2,22 @@
 
 ![Screenshot of peek](https://i.imgur.com/egsi0Qc.png)
 
-peek is an optionally dynamic mini-dashboard website for your servers.
+peek is an landing page for your servers that can optionally act as a miniature
+dashboard of sorts.
+
+To get started, clone the website somewhere:
+
+```sh
+git clone https://github.com/slice/peek.git
+```
+
+Then, edit `index.html` and replace the `<h1>` text with the name of your server
+or network. If you just want a static landing page, then you're done!
 
 ## Dynamic JSON
 
-You can expose a JSON endpoint that the website can fetch to present a link
-list, a meter display, or both.
+You can optionally expose a JSON endpoint (or file) that the website can fetch
+to present a list of meters, links, or both.
 
 By default, the website is static. To enable dynamic JSON, edit `index.html`:
 
@@ -16,11 +26,11 @@ window.DYNAMIC = true;
 window.DYNAMIC_JSON_ENDPOINT = "//dynamic.example.json";
 ```
 
-`DYNAMIC_JSON_ENDPOINT` dictates the URL the website will fetch on load. Make
+`DYNAMIC_JSON_ENDPOINT` is the URL that the website will fetch on load. Make
 sure that you have
 [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) configured
-correctly if you want to have the website request something that isn't on the
-same origin.
+correctly if you want the website to request something that isn't on the same
+origin.
 
 If the endpoint starts with `//`, then the `//` will be replaced with the domain
 that the page is loaded at, even matching the protocol.
@@ -28,7 +38,8 @@ that the page is loaded at, even matching the protocol.
 ### Example
 
 Here is a commentated example of the JSON you can return. Keep in mind that JSON
-doesn't actually support comments.
+doesn't actually support comments, so you'll need to remove them if you copy
+this.
 
 ```js
 {
