@@ -32,6 +32,7 @@ html {
 body {
   background: black;
   color: var(--primary);
+  padding: 2rem;
 
   background-image: url(../images/background.png);
   background-repeat: repeat;
@@ -84,7 +85,7 @@ h1 {
   }
 }
 
-/* dynamic styles */
+/* dashboard */
 
 body.dynamic main {
   font-size: 1.5rem;
@@ -109,6 +110,16 @@ body.dynamic .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  body.dynamic .content {
+    display: block;
+  }
+
+  body.dynamic ul {
+    margin: 0 0 1rem 0;
+  }
 }
 
 /* meters */
