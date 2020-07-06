@@ -27,7 +27,7 @@ that the page is loaded at, even matching the protocol.
 Here is a commentated example of the JSON you can return. Keep in mind that JSON
 doesn't actually support comments.
 
-```json
+```js
 {
   // Link list. You can remove this entirely if you'd like.
   "links": [
