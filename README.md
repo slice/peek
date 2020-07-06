@@ -11,8 +11,9 @@ To get started, clone the website somewhere:
 git clone https://github.com/slice/peek.git
 ```
 
-Then, edit `index.html` and replace the `<h1>` text with the name of your server
-or network. If you just want a static landing page, then you're done!
+Then, edit `index.html` and replace the `<h1>` and `<title>` text with the name
+of your server or network. If you just want a static landing page, then you're
+done!
 
 ## Dashboard usage
 
