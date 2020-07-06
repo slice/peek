@@ -1,5 +1,7 @@
 # peek
 
+![Screenshot of peek](https://i.imgur.com/egsi0Qc.png)
+
 peek is an optionally dynamic mini-dashboard website for your servers.
 
 ## Dynamic JSON
