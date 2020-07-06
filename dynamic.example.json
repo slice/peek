@@ -1,0 +1,13 @@
+{
+  "links": [
+    { "url": "https://github.com" },
+    { "url": "https://gitlab.com", "text": "GitLab" },
+    { "url": "https://grafana.com", "text": "Grafana", "new_tab": true }
+  ],
+
+  "meters": [
+    { "value": 25, "max": 50, "label": "Apples" },
+    { "value": 250, "max": 1000, "label": "Storage", "unit": "GB" },
+    { "value": 75, "label": "Bandwidth", "unit": "TB", "showMax": false }
+  ]
+}
