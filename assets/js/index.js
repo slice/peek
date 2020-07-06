@@ -30,17 +30,17 @@ async function fetchDynamicJSON(endpoint = DYNAMIC_JSON_ENDPOINT) {
     resp = await fetch(endpoint);
 
     if (!resp.ok) {
-      throw `Failed to fetch dynamic JSON: server responded with HTTP ${resp.status}.`;
+      throw `Failed to fetch dashboard JSON: server responded with HTTP ${resp.status}.`;
     }
   } catch (error) {
-    throw `Failed to load dynamic JSON: ${error}`;
+    throw `Failed to load dashboard JSON: ${error}`;
   }
 
   let object;
   try {
     object = await resp.json();
   } catch (error) {
-    throw `Failed to parse dynamic JSON: ${error}`;
+    throw `Failed to parse dashboard JSON: ${error}`;
   }
   return object;
 }
